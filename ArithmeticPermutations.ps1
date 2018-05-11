@@ -1,6 +1,3 @@
-$Script:DigitCount = 3 #determines max range of numbers, 3 will be 0-999
-
-
 function Find-ArithmeticPermutations {
 <#
     .SYNOPSIS
