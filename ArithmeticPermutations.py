@@ -18,7 +18,7 @@ def main():
 	for num in all:
 		numList = convert_to_list(num)
 		for p in permutations(numList): #loop through all permutations
-			resultList = convert_to_list(num + list_to_num(list(p))) #get result of original list + p
+			resultList = convert_to_list(num + list_to_num(p)) #get result of original list + p
 			if compare(numList, resultList): #if all digits in original are in result they are arithmetic permutations
 				print(str(numList) + ' + ' + str(p) + ' = ' + str(resultList))
 	input('Complete') #stop console from closing
