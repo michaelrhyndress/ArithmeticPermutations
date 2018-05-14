@@ -13,10 +13,10 @@ function Find-ArithmeticPermutations {
 #>
     Param (
         [Parameter(Mandatory=$false)]
-        [int] $DigitalCount = 3
+        [int] $DigitCount = 3
     )
 
-    $Script:DigitCount = $DigitalCount #determines max range of numbers, 3 will be 0-999
+    $Script:DigitCount = $DigitCount #determines max range of numbers, 3 will be 0-999
 
     foreach ($num in 0..(Format-TrailingZeros -Base 1 -Zeros $Script:DigitCount)) {
         $BaseInt = [int]$num
